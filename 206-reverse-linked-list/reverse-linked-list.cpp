@@ -11,8 +11,8 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        struct ListNode* t = NULL;
-        ListNode* q=NULL;
+         ListNode* t= NULL;
+        ListNode* q;
 
         while(head!=NULL){
             q = head->next;
