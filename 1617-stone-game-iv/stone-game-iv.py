@@ -1,19 +1,21 @@
 class Solution:
     def winnerSquareGame(self, n: int) -> bool:
         
-        @cache
-        def dfs(i,k):
-            if i ==1:return k==0
+        d = {}
+
+        def dfs(n):
+            if n==1:return True
+            if n == 0:return False
+
+            if n in d: return d[n]
+            d[n] = False
+
             j = 1
-            while j*j<=i:
-                if j*j==i:return k==0
-                if k==0:
-                    if dfs(i-j*j,1): return True
-                else:
-                    if not dfs(i-j*j,0): return False
-                j+=1    
-            return k==1
-        w = dfs(n,0)
-        # print(d)
-        return w                
+            while j*j<=n:
+                if not dfs(n- j*j):
+                    d[n] = True 
+                    return True
+                j+=1
+            return False
+        return dfs(n)            
 
