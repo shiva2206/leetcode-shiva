@@ -2,21 +2,21 @@ class Solution:
     def stoneGameIII(self, ston: List[int]) -> str:
         d={}
         q = sum(ston)
-        def dfs(i,ali):
+        def dfs(i):
             if i==len(ston):return 0
-            if (i,ali) in d:return d[(i,ali)]
+            if i in d:return d[i]
 
-            d[(i,ali)] = -float('inf') if ali else float('inf')
+            d[i] = -float('inf') 
             s = 0
             for j in range(i,min(i+3,len(ston))):
-                if ali:
+                # if ali:
                     s+=ston[j]
-                    d[(i,ali)] = max(d[(i,ali)],s + dfs(j+1,False))
-                else:
-                    d[(i,ali)] = min(d[(i,ali)], dfs(j+1,True))    
-            return d[(i,ali)]
-        ans = dfs(0,True)
+                    d[i] = max(d[i],s - dfs(j+1))
+                # else:
+                    # d[(i,ali)] = min(d[(i,ali)], dfs(j+1,True))    
+            return d[i]
+        ans = dfs(0)
         # print(d)
-        if ans >q-ans:return "Alice"
-        elif ans<q-ans: return "Bob"
+        if ans >0:return "Alice"
+        elif ans<0: return "Bob"
         return "Tie"        
