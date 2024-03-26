@@ -6,22 +6,16 @@
 #         self.right = right
 class Solution:
     def pathSum(self, root: Optional[TreeNode], tar: int) -> int:
-        self.res = 0
-
+        d = defaultdict(int)
+        d[0]=1
+        self.ans = 0
         def dfs(t,s):
-            if not t:return
+            if not t: return 
             s += t.val
-            if s == tar:
-                self.res+=1
-            x = dfs(t.left,s)
-            y = dfs(t.right,s)
-
-        def ggg(t):
-            if not t:return 
-            dfs(t,0)
-            ggg(t.left)
-            ggg(t.right)
-        ggg(root)
-        return self.res
-
-
+            self.ans += d[s - tar]
+            d[s]+=1
+            dfs(t.left,s )
+            dfs(t.right,s)
+            d[s]-=1
+        dfs(root,0)
+        return self.ans    
