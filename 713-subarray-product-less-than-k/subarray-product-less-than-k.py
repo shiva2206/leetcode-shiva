@@ -6,9 +6,10 @@ class Solution:
         ans = 0
         for j in range(len(nums)):
             s = s*nums[j]
-            while s>=k and i<len(nums):
+            while i<=j and s>=k :
                 s = s//nums[i]
                 i+=1
-            if i<=j:
-                ans += (j-i+1)
+            
+            ans += (j-i+1)
+            # print(i,j)    
         return ans
