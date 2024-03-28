@@ -7,7 +7,7 @@
 class Solution:
     def longestUnivaluePath(self, root: Optional[TreeNode]) -> int:
          
-        if not root:return 0
+        # if not root:return 0
         self.ans = 0
         def dfs(t):
             if not t:return 0
@@ -26,5 +26,5 @@ class Solution:
             self.ans = max(self.ans,1+x,1+y,1+x+y) 
             return max(x,y)+1
         dfs(root)
-        return self.ans-1                           
+        return max(0,self.ans-1)                           
 
