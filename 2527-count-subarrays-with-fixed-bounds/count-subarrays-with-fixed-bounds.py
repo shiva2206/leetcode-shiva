@@ -4,30 +4,33 @@ class Solution:
         i = 0
         ans =0
         d ={}
-        l = []
-        pq = []
+        a = inf
+        b = -inf
+
         c = 0
         for j in range(len(nums)):
             if nums[j]>maxK or nums[j]<minK:
                 i = j+1
                 d={}
-                pq=[]
+                # pq=[]
+                a = inf
+                b = -inf
                 c = 0
-                l=[]
+                # l=[]
                 continue
             if nums[j] not in d:
                 d[nums[j]] = 0
-                heapq.heappush(l,nums[j])
-                heapq.heappush(pq,-nums[j])
+            a = min(a,nums[j])
+            b = max(b,nums[j])   
             d[nums[j]]+=1
-            while l and l[0] == minK and pq and -pq[0]==maxK:
+            while a == minK and b==maxK:
                 d[nums[i]]-=1
                 if d[nums[i]] == 0:
                     d.pop(nums[i])
-                while l and l[0] not in d:
-                    heapq.heappop(l)
-                while pq and -pq[0] not in d:
-                    heapq.heappop(pq)
+                if a not in d:
+                    a = inf
+                if b not in d:
+                    b = -inf
                 c +=1  
                 i+=1
 
