@@ -6,7 +6,6 @@ class Solution:
         d ={}
         a = inf
         b = -inf
-
         c = 0
         for j in range(len(nums)):
             if nums[j]>maxK or nums[j]<minK:
