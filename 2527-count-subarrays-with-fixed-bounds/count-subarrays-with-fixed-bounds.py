@@ -10,7 +10,7 @@ class Solution:
         for j in range(len(nums)):
             if nums[j]>maxK or nums[j]<minK:
                 i = j+1
-                d={}
+                d.clear()
                 # pq=[]
                 a = inf
                 b = -inf
