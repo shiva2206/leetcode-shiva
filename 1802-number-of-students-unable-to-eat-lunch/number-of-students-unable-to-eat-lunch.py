@@ -7,10 +7,8 @@ class Solution:
                 one+=1
             else:
                 zer+=1
-        sand=sand[::-1]
-        while sand:
-            x = sand.pop()
-            # print(x,one,zer)
+      
+        for x in sand:
             if x==0:
                 if zer ==0:return one
                 zer-=1
