@@ -7,7 +7,7 @@
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
         
-        self.ans = 0
+
         def dfs(t,p):
             if not t:return 0
 
