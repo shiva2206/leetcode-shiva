@@ -6,16 +6,20 @@
 #         self.right = right
 class Solution:
     def smallestFromLeaf(self, root: Optional[TreeNode]) -> str:
-        self.res = "z"*13
-
+        
+        self.ans = "z"*13
         def dfs(t,s):
-            s = chr(t.val + 97) + s
+            if not t:return 
+            p = chr(97 + t.val)+s
+
             if not t.left and not t.right:
-                self.res = min(self.res,s)
-                return 
+                if self.ans>p:
+                    self.ans = p
             if t.left:
-                dfs(t.left,s)
+                dfs(t.left,p)
             if t.right:
-                dfs(t.right,s)
-        dfs(root,"")            
-        return self.res
+                dfs(t.right,p)
+        dfs(root,"")
+        return self.ans
+
+            
