@@ -13,8 +13,7 @@ class Solution:
             p = chr(97 + t.val)+s
 
             if not t.left and not t.right:
-                if self.ans>p:
-                    self.ans = p
+               self.ans = min(self.ans,p)
             if t.left:
                 dfs(t.left,p)
             if t.right:
