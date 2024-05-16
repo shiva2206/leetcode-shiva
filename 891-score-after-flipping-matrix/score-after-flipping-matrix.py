@@ -1,14 +1,11 @@
 class Solution:
     def matrixScore(self, grid: List[List[int]]) -> int:
-        l = [0]*len(grid[0])
-        l[0] = len(grid)
-        for i in range(len(grid)):
-            for j in range(1,len(grid[i])):
-                l[j]+= 1 if grid[i][0] == 1 and grid[i][j]==1 or grid[i][0]==0 and grid[i][j]==0 else 0
-        ans = 0
-        b = 1
-        for i in range(len(l)-1,-1,-1):
-            ans += max(l[i],len(grid) - l[i]) * b
-            b = b*2
-            
-        return ans
+        a = 2**(len(grid[0])-1) * len(grid)
+        ans = 0 
+        for j in range(1,len(grid[0])):
+            c = 0
+            ans <<=1
+            for i in range(len(grid)):
+                c +=1 if grid[i][j] == grid[i][0] else 0
+            ans += max(c,len(grid)-c)
+        return a + ans
