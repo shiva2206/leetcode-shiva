@@ -6,6 +6,7 @@ class Solution:
             if a == b == n:return 1
 
             if (a,b) in d:return d[(a,b)]
+            if (b,a) in d:return d[(b,a)]
 
             m = 0
 
