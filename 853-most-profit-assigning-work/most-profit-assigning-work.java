@@ -13,7 +13,9 @@ class Solution {
             }
         });
 
-        PriorityQueue<Integer> pq = new PriorityQueue<Integer>((a,b)->b-a);
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>((a,b)->{
+            return b-a;
+        });
 
         int ans = 0,j=0;
         Arrays.sort(work);
