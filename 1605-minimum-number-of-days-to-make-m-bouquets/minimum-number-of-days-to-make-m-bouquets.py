@@ -1,12 +1,12 @@
 class Solution:
     def minDays(self, bloomDay: List[int], m: int, k: int) -> int:
-        l = bloomDay+[]
+        l = list(set(bloomDay))+[]
         l.sort()
 
         def check(t):
             c = 0
             n = 0
-            for i in range(len(l)):
+            for i in range(len(bloomDay)):
                 if bloomDay[i]<=t:
                     n+=1
                     if n==k:
@@ -28,7 +28,7 @@ class Solution:
                     j = m-1
                 else:
                     i = m+1
-                print(i,j)
+               
             return ans
         return binary(0,len(l)-1)
             
