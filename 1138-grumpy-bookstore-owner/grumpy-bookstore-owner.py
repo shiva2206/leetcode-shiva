@@ -1,21 +1,21 @@
-class Solution(object):
-    def maxSatisfied(self, customers, grumpy, minutes):
-        initial_satisfaction = 0
-        max_extra_satisfaction = 0
-        current_window_satisfaction = 0
+class Solution:
+    def maxSatisfied(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
         
+        ans = 0
         for i in range(len(customers)):
-            if grumpy[i] == 0:
-                initial_satisfaction += customers[i]
-            elif i < minutes:
-                current_window_satisfaction += customers[i]
+            if grumpy[i]==0:
+                ans += customers[i]
         
-        max_extra_satisfaction = current_window_satisfaction
-        
-        for i in range(minutes, len(customers)):
-            current_window_satisfaction += customers[i] * grumpy[i]
-            current_window_satisfaction -= customers[i - minutes] * grumpy[i - minutes]
-            max_extra_satisfaction = max(max_extra_satisfaction, current_window_satisfaction)
-        
-        return initial_satisfaction + max_extra_satisfaction
-        
+        m = 0
+        t = 0
+        i = 0
+        for j in range(len(customers)):
+            if grumpy[j]==1:
+                t+=customers[j]
+            if j - i ==minutes:
+                if grumpy[i]==1:
+                    t -=customers[i]
+                i+=1
+            m = max(m,t)
+        print(m)
+        return ans+m
