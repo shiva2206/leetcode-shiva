@@ -1,24 +1,9 @@
 class Solution:
     def findTheWinner(self, n: int, k: int) -> int:
         
-        l = [True]*(n+1)
-        
-        x=1
-        for i in range(n-1):
-            
-            y= 0
-            while True:
-                if x == n+1:
-                    x = 1
-                if l[x]:
-                    y+=1
-                    if y == k:
-                        
-                        l[x]=False
-                        x+=1
-                        break
-                x+=1
-        
-        for q in range(1,len(l)):
-            if l[q]:return q
-        return -1
+        nums = list(range(n))
+        i = 0 
+        while len(nums) > 1: 
+            i = (i + k-1) % len(nums)
+            nums.pop(i)
+        return nums[0] + 1
