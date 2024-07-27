@@ -13,10 +13,11 @@ class Solution:
                 if y in res:continue
                 res[y] = z 
                 for a,b in d[y]:
-                    heapq.heappush(hp,(a+z,b))
+                    if b not in res:
+                         heapq.heappush(hp,(a+z,b))
             return res
         allcosts = {c : dijstra(c) for c in set(source)}
-
+        print(allcosts)
         res =0
         for i in range(len(source)):
             if source[i]==target[i]: continue
