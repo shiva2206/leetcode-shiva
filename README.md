@@ -40,3 +40,10 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1137-height-checker](https://github.com/shiva2206/leetcode-shiva/tree/master/1137-height-checker) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Linked List
+|  |
+| ------- |
+| [0725-split-linked-list-in-parts](https://github.com/shiva2206/leetcode-shiva/tree/master/0725-split-linked-list-in-parts) |
+<!---LeetCode Topics End-->
