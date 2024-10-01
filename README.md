@@ -61,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1435-xor-queries-of-a-subarray](https://github.com/shiva2206/leetcode-shiva/tree/master/1435-xor-queries-of-a-subarray) |
+| [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/shiva2206/leetcode-shiva/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/shiva2206/leetcode-shiva/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2411-spiral-matrix-iv](https://github.com/shiva2206/leetcode-shiva/tree/master/2411-spiral-matrix-iv) |
 ## Matrix
@@ -82,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/shiva2206/leetcode-shiva/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
+| [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/shiva2206/leetcode-shiva/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/shiva2206/leetcode-shiva/tree/master/1786-count-the-number-of-consistent-strings) |
 ## String
 |  |
@@ -92,6 +94,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 |  |
 | ------- |
+| [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/shiva2206/leetcode-shiva/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/shiva2206/leetcode-shiva/tree/master/1786-count-the-number-of-consistent-strings) |
 ## Prefix Sum
 |  |
