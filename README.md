@@ -73,6 +73,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2411-spiral-matrix-iv](https://github.com/shiva2206/leetcode-shiva/tree/master/2411-spiral-matrix-iv) |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/shiva2206/leetcode-shiva/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -93,6 +94,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0241-different-ways-to-add-parentheses](https://github.com/shiva2206/leetcode-shiva/tree/master/0241-different-ways-to-add-parentheses) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/shiva2206/leetcode-shiva/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/shiva2206/leetcode-shiva/tree/master/1786-count-the-number-of-consistent-strings) |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/shiva2206/leetcode-shiva/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Counting
 |  |
 | ------- |
@@ -119,4 +121,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1256-rank-transform-of-an-array](https://github.com/shiva2206/leetcode-shiva/tree/master/1256-rank-transform-of-an-array) |
+## Stack
+|  |
+| ------- |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/shiva2206/leetcode-shiva/tree/master/2800-minimum-string-length-after-removing-substrings) |
 <!---LeetCode Topics End-->
