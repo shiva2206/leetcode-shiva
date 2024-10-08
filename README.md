@@ -94,6 +94,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0241-different-ways-to-add-parentheses](https://github.com/shiva2206/leetcode-shiva/tree/master/0241-different-ways-to-add-parentheses) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/shiva2206/leetcode-shiva/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/shiva2206/leetcode-shiva/tree/master/1786-count-the-number-of-consistent-strings) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/shiva2206/leetcode-shiva/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/shiva2206/leetcode-shiva/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Counting
 |  |
@@ -124,5 +125,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/shiva2206/leetcode-shiva/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/shiva2206/leetcode-shiva/tree/master/2800-minimum-string-length-after-removing-substrings) |
+## Two Pointers
+|  |
+| ------- |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/shiva2206/leetcode-shiva/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+## Greedy
+|  |
+| ------- |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/shiva2206/leetcode-shiva/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 <!---LeetCode Topics End-->
