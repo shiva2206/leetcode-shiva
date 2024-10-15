@@ -66,6 +66,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/shiva2206/leetcode-shiva/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/shiva2206/leetcode-shiva/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2411-spiral-matrix-iv](https://github.com/shiva2206/leetcode-shiva/tree/master/2411-spiral-matrix-iv) |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/shiva2206/leetcode-shiva/tree/master/2616-maximal-score-after-applying-k-operations) |
 ## Matrix
 |  |
 | ------- |
@@ -142,9 +143,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/shiva2206/leetcode-shiva/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/shiva2206/leetcode-shiva/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/shiva2206/leetcode-shiva/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [3195-separate-black-and-white-balls](https://github.com/shiva2206/leetcode-shiva/tree/master/3195-separate-black-and-white-balls) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [1002-maximum-width-ramp](https://github.com/shiva2206/leetcode-shiva/tree/master/1002-maximum-width-ramp) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/shiva2206/leetcode-shiva/tree/master/2616-maximal-score-after-applying-k-operations) |
 <!---LeetCode Topics End-->
