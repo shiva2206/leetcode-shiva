@@ -9,6 +9,7 @@ class Solution:
             if (res > MAX // 10 or (res == MAX // 10 and digit >= MAX % 10)):
                 return 0
             if (res < MIN // 10 or (res == MIN // 10 and digit <= MIN % 10)):
+                print(digit,MIN%10)
                 if res == MIN:
                     print(digit,MIN%10)
                     return 1
