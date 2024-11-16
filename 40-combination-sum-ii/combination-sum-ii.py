@@ -7,10 +7,8 @@ class Solution:
         def dfs(i,t):
             if t==tar:
                 res.append(s.copy())
-                print(s)
                 return 
             if i==len(cand) or t>tar:
-                print(s)
                 return
             s.append(cand[i])
             dfs(i+1,t+cand[i])
