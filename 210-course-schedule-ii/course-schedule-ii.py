@@ -1,25 +1,20 @@
 class Solution:
     def findOrder(self, num: int, pre: List[List[int]]) -> List[int]:
-        
-        d = {}
+        d =defaultdict(list)
         for i,j in pre:
-            if i not in d:
-                d[i] = []
-            d[i].append(j)
+            d[j].append(i)
+        
         vis = {}
         res =[]
         def dfs(i):
             if i in vis:
                 return vis[i]
-            vis[i] = False
-            
-            if i in d:
-                for j in d[i]:
-                    if not dfs(j):return False
+            vis[i] = True
+            for j in d[i]:
+                if dfs(j):return True
             res.append(i)
-            vis[i] =True
-            return True
+            vis[i] = False
+            return False
         for i in range(num):
-            if not dfs(i):return []
-        return res        
-
+            if dfs(i):return []
+        return res[::-1]
