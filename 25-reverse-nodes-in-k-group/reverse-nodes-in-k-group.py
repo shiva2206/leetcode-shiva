@@ -11,21 +11,31 @@ class Solution:
         while t!=None:
             t = t.next
             n+=1
-        l = []
+
+        ans = None
+        prev =None
         for i in range(n//k):
             t = None
             p = head
-            prev = head
+            
             for j in range(k):
                
                 q = p.next
                 p.next = t
                 t = p
                 p = q
-            l.append((t,head))
-            head = p
+            if not ans:
+                ans = t
+            else:
+            # l.append((t,head))
+                prev.next = t
+            prev = head
             if i+1 == n//k:
-                l.append((p,None))
+                head.next = p
+                return ans
+            head = p
+        
+        
         for i in range(len(l)-1):
             l[i][1].next = l[i+1][0]
         
