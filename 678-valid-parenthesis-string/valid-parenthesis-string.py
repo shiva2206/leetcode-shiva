@@ -1,15 +1,19 @@
 class Solution:
     def checkValidString(self, s: str) -> bool:
-         a =0
-         b=0
-         for i in s:
-             if i=='(':
-                 a,b = a+1,b+1
-             elif i==")":
-                 a,b = a-1,b-1
-             else:
-                 a,b = a-1,b+1
-             if a<0:a=0
-             if b<0:return False
-         return a<=0                   
-                    
+        leftmin = 0
+        leftmax = 0
+
+        for c in s:
+            if c =="(":
+                leftmin+=1
+                leftmax+=1
+            elif c == ")":
+                leftmin-=1
+                leftmax-=1
+            else:
+                leftmin-=1
+                leftmax+=1
+            if leftmax<0:return False
+            if leftmin<0:
+                leftmin = 0
+        return leftmin ==0 
