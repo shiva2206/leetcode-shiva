@@ -4,17 +4,15 @@ class Solution:
         for i,j  in enumerate(s):
             d[j] = i
         
-        ans = 0
+        size = 0
         res = []
-        
-        
         end = 0
         for i,j in enumerate(s):
             
-            ans+=1
+            size+=1
             end = max(end,d[j])
             if end == i:
-                res.append(ans)
-                ans = 0
+                res.append(size)
+                size = 0
         return res
             
