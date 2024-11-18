@@ -1,27 +1,27 @@
 class Solution:
     def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+
+        d = defaultdict(list)
         
-        adj = defaultdict(list)
-        for x,y,z in flights:
-            adj[x].append((y,z))
+        q= deque()
+        for i,j,p in flights:
+            d[i].append((p,j))
+            if i == src:
+                q.append((p,j))
+        
 
-        dis = [float('inf')]*n
+        l = [float('inf')]*n
+        l[src] = 0
+        for i in range(k+1):
+            w = len(q)
+            for j in range(w):
+                price,stop = q.popleft()
+                if l[stop]>price:
+                    l[stop] = price
+                    for p,node in d[stop]:
+                        q.append((price + p,node))
+        print(l)
+        return -1 if l[dst] == float('inf') else l[dst]
 
-        deq = deque()
-        deq.append((src,0))
-        dis[src] = 0
-        t = 0
-        while deq and t<=k:
-            # print()
-            # print(deq,dis)
-            p = len(deq)
-            for _ in range(p):
-                x,y = deq.popleft()
-                for i,j in adj[x]:
-                    m = j + y
-                    if m<dis[i]:
-                        dis[i] = m
-                        deq.append((i,m))
-            t+=1            
-        return dis[dst] if dis[dst] !=float('inf') else -1
-            
+    
+
