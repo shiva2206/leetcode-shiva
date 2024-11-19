@@ -175,4 +175,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/shiva2206/leetcode-shiva/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+## Database
+|  |
+| ------- |
+| [1338-queries-quality-and-percentage](https://github.com/shiva2206/leetcode-shiva/tree/master/1338-queries-quality-and-percentage) |
 <!---LeetCode Topics End-->
