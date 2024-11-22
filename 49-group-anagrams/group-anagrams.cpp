@@ -25,8 +25,8 @@ public:
         }  
 
         vector<vector<string>> res;
-        for(auto vec : d){
-            res.push_back(vec.second);
+        for(auto&[key,val] : d){
+            res.push_back(val);
         }
         return res;
 
