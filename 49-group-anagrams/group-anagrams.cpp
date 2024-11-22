@@ -3,7 +3,7 @@ public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         unordered_map<string,vector<string>>  d;
         for(string s : strs){
-            int arr[26] = {0};
+            vector<int> arr(26,0);
             for(char c : s){
                 arr[c-'a']+=1;
             }
