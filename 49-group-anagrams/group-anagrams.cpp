@@ -15,6 +15,7 @@ public:
                 }
 
             }
+            cout <<t<<endl;
             if(d.find(t)==d.end()){
                 
                 d[t].push_back(s);
