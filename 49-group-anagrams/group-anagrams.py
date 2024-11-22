@@ -1,14 +1,14 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         d = {}
-        for i in strs:
+        for s in strs:
             arr = [0]*26
-            for j in i:
-                arr[ord(j)-97]+=1
-            
-            k = ",".join(map(str,arr))
-            if k not in d:
-                d[k] = [i]
+            for i in s:
+                arr[ord(i)-97]+=1
+            t = ",".join(map(str,arr))
+            if t not in d:
+                d[t] = [s]
             else:
-                d[k].append(i)
+                d[t].append(s)
         return list(d.values())
+
