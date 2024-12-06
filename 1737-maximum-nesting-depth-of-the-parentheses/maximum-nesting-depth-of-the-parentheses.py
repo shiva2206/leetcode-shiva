@@ -1,13 +1,12 @@
 class Solution:
     def maxDepth(self, s: str) -> int:
-        l = 0
-        m = 0
-
+        ans = 0
+        c = 0
         for i in s:
             if i=="(":
-                l+=1
-                m = max(m,l)
+                c+=1
+                ans=max(ans,c)
             elif i==")":
-                l-=1
-        return m
-                
+                c-=1
+        return ans
+            
