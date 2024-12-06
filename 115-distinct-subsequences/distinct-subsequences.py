@@ -13,16 +13,12 @@ class Solution:
             d[(i,j)] =m
             return m
         d = [[0]*(len(t)+1) for i in range(len(s)+1)]
-        # for i in range(len(s)):
-        #     d[i][len(t)] = 1
+        for i in range(len(s)+1):
+            d[i][len(t)] = 1
         
-        for i in range(len(s),-1,-1):
-            for j in range(len(t),-1,-1):
-                if j == len(t):
-                    d[i][j] = 1
-                    continue
-                if i == len(s):
-                    continue
+        for i in range(len(s)-1,-1,-1):
+            for j in range(len(t)-1,-1,-1):
+                
                 m = 0
                 if s[i] == t[j]:
                     m = d[i+1][j+1]
