@@ -5,11 +5,11 @@ class Solution:
         c = 0
         for i in s:
             if i=="(":
-                if c==0:
-                    pass
-                else:
-                    res+="("
                 c+=1
+                if c!=1:
+                    
+                    res+="("
+                
 
             else:
                 c-=1
