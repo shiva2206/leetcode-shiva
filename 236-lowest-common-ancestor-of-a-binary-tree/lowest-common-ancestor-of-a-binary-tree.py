@@ -14,7 +14,8 @@ class Solution:
                 return t
             left = dfs(t.left)
             right = dfs(t.right)
-            if left and right:return t
-            if left:return left
-            return right
+            if not left:return right
+            if not right:return left
+            
+            return t
         return dfs(root)
