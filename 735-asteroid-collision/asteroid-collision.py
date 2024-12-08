@@ -11,7 +11,6 @@ class Solution:
                 if a == b:
                     break
                 elif a>b:
-                    z = False
                     stack.append(a)
                     break
                 else:
