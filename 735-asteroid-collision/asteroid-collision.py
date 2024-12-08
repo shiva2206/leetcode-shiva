@@ -3,20 +3,15 @@ class Solution:
         
         stack = []
         for i in asteroids:
-            z = True
-            while stack and stack[-1]>0 and i<0:
-                a = stack.pop()
-                b = abs(i)
-                z = False
-                if a == b:
-                    break
-                elif a>b:
-                    stack.append(a)
-                    break
-                else:
-                    i = -b
-                    z = True
-                    
-            if z:
+            if i>0:
                 stack.append(i)
+            else:
+                while stack and stack[-1]>0 and stack[-1]<abs(i):
+                    stack.pop()
+                if stack and stack[-1]>0 and stack[-1] == abs(i):
+                    stack.pop()
+                elif not stack or stack[-1]<abs(i):
+
+                    stack.append(i)
+                    
         return stack
