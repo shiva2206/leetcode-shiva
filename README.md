@@ -69,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2411-spiral-matrix-iv](https://github.com/shiva2206/leetcode-shiva/tree/master/2411-spiral-matrix-iv) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/shiva2206/leetcode-shiva/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/shiva2206/leetcode-shiva/tree/master/2616-maximal-score-after-applying-k-operations) |
+| [2868-continuous-subarrays](https://github.com/shiva2206/leetcode-shiva/tree/master/2868-continuous-subarrays) |
 ## Matrix
 |  |
 | ------- |
@@ -166,6 +167,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/shiva2206/leetcode-shiva/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/shiva2206/leetcode-shiva/tree/master/2616-maximal-score-after-applying-k-operations) |
+| [2868-continuous-subarrays](https://github.com/shiva2206/leetcode-shiva/tree/master/2868-continuous-subarrays) |
 ## Backtracking
 |  |
 | ------- |
@@ -179,4 +181,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1338-queries-quality-and-percentage](https://github.com/shiva2206/leetcode-shiva/tree/master/1338-queries-quality-and-percentage) |
+## Queue
+|  |
+| ------- |
+| [2868-continuous-subarrays](https://github.com/shiva2206/leetcode-shiva/tree/master/2868-continuous-subarrays) |
+## Sliding Window
+|  |
+| ------- |
+| [2868-continuous-subarrays](https://github.com/shiva2206/leetcode-shiva/tree/master/2868-continuous-subarrays) |
+## Ordered Set
+|  |
+| ------- |
+| [2868-continuous-subarrays](https://github.com/shiva2206/leetcode-shiva/tree/master/2868-continuous-subarrays) |
+## Monotonic Queue
+|  |
+| ------- |
+| [2868-continuous-subarrays](https://github.com/shiva2206/leetcode-shiva/tree/master/2868-continuous-subarrays) |
 <!---LeetCode Topics End-->
