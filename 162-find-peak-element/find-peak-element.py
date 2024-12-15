@@ -14,7 +14,7 @@ class Solution:
             elif left>nums[m]>right:
                 j = m-1
             elif left>nums[m]<right:
-                j = m-1
+                i = m+1
             else:
                 return m
 
