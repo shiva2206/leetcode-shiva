@@ -24,7 +24,7 @@ class Solution:
                     curr = curr.left
                 else:
                     inorder.append(curr.val)
-                    prev.right = None
+                 
                     curr = curr.right
         return inorder
 
