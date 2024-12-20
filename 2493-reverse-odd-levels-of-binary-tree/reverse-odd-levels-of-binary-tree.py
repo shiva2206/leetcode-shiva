@@ -9,10 +9,12 @@ class Solution:
         que = deque()
         que.append(root)
         h = 0
+        q = []
         while que:
-            q = []
             for i in range(len(que)):
                 t = que.popleft()
+                if h%2==1:
+                    t.val = q.pop()
                 if t.left:
                     que.append(t.left)
                     if h%2==0:
@@ -21,8 +23,6 @@ class Solution:
                     if h%2==0:
                         q.append(t.right.val)
                     que.append(t.right)
-            if h%2==0:
-                for i in range(len(que)):
-                    que[i].val = q.pop()
+           
             h+=1
         return root
