@@ -11,8 +11,8 @@ class Solution:
                 d[i].append(j)
                 d[j].append(i)
             return d
-        adj1 = adjlist(edges1)
-        adj2 = adjlist(edges2)
+     
+    
 
         def findmax(adj):
             k = 0
@@ -29,8 +29,8 @@ class Solution:
                 return max(max_child)+1 
             dfs(0,-1)
             return k
-        d1 = findmax(adj1)
-        d2 = findmax(adj2)
+        d1 = findmax(adjlist(edges1))
+        d2 = findmax(adjlist(edges2))
         
         return max(d1,d2,1 + math.ceil(d1/2) + math.ceil(d2/2))
 
