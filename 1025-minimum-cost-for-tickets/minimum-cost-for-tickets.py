@@ -1,20 +1,17 @@
 class Solution:
     def mincostTickets(self, days: List[int], costs: List[int]) -> int:
-        
+        l = set(days)
+        d = [0]
+        for i in range(1,days[-1]+1):
+            if i not in l:
+                d.append(d[-1])
+            else:
+                oneday = (d[i-1] if i-1>=0 else 0)+costs[0]
+                sevenday = (d[i-7] if i-7>=0 else 0)+costs[1]
+                thirtyday = (d[i-30] if i-30>=0 else 0) + costs[2]
+                d.append(min(oneday,sevenday,thirtyday))
+        return d[-1]
 
-     
-
-        d = [[0]*(len(days)+1) for i in range(days[-1]+31)]
-
-        for i in range(days[-1]-1,-1,-1):
-            for j in range(len(days)-1,-1,-1):
-                if i>=days[j]:
-                    d[i][j] = d[i][j+1]
-                else:
-                    d[i][j] = float('inf')
-                    m = min(costs[0] + d[i+1][j],costs[1] + d[i+7][j] ,costs[2] + d[i+30][j],d[days[j]-1][j])
-                    d[i][j] = m
-        return d[0][0]
             
 
 
