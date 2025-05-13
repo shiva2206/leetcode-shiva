@@ -1,18 +1,20 @@
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
-        res = []
+        
+        ans = []
         l = []
         def dfs(i):
             if i == len(s):
-                res.append(l.copy())
+                ans.append(l.copy())
                 return 
             q = ""
-            for k in range(i,len(s)):
-                q = q+s[k]
+            for j in range(i,len(s)):
+                q += s[j]
                 if q == q[::-1]:
                     l.append(q)
-                    dfs(k+1)
+                    dfs(j+1)
                     l.pop()
-            return 
+        
         dfs(0)
-        return res
+        return ans
+
